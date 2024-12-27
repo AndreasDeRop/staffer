@@ -5,11 +5,10 @@
 "2024-backend-a04@file:.":
   version "1.0.0"
   dependencies:
-    "2024-backend-a04" "file:../../../../../../../AppData/Local/Yarn/Cache/v6/npm-2024-backend-a04-1.0.0-46a54431-154c-47eb-aa5c-16ff4a33b0ae-1735322121004/node_modules/2024-backend-a04"
+    "2024-backend-a04" "file:../../../../../../../AppData/Local/Yarn/Cache/v6/npm-2024-backend-a04-1.0.0-71677ad7-4f29-42e5-915f-0138faf1e0b7-1735322411361/node_modules/2024-backend-a04"
     "@koa/cors" "^5.0.0"
     "@koa/router" "^12.0.1"
     argon2 "^0.31.2"
-    config "^3.3.11"
     joi "^17.12.2"
     jsonwebtoken "^9.0.2"
     knex "^3.1.0"
@@ -1370,10 +1369,10 @@ concat-map@0.0.1:
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
-config@^3.3.11:
-  version "3.3.11"
-  resolved "https://registry.npmjs.org/config/-/config-3.3.11.tgz"
-  integrity sha512-Dhn63ZoWCW5EMg4P0Sl/XNsj/7RLiUIA1x1npCy+m2cRwRHzLnt3UtYtxRDMZW/6oOMdWhCzaGYkOcajGgrAOA==
+config@^3.3.12:
+  version "3.3.12"
+  resolved "https://registry.yarnpkg.com/config/-/config-3.3.12.tgz#a10ae66efcc3e48c1879fbb657c86c4ef6c7b25e"
+  integrity sha512-Vmx389R/QVM3foxqBzXO8t2tUikYZP64Q6vQxGrsMpREeJc/aWRnPRERXWsYzOHAumx/AOoILWe6nU3ZJL+6Sw==
   dependencies:
     json5 "^2.2.3"
 
