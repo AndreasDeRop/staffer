@@ -1,0 +1,23 @@
+const { tables } = require("..");
+
+module.exports = {
+  //Migratie uitvoeren
+  up: async (knex) => {
+    await knex.schema.createTable(tables.Games, (table) => {
+       table.increments("id").primary();
+       table.integer("youth_movement_id").unsigned().references("id").inTable(tables.Youth_movements).onDelete("CASCADE").onUpdate("CASCADE").notNullable();
+       table.string("title", 255).notNullable();
+       table.string("description");
+       table.string("required_materials");
+       table.string("age_range", 50);
+       table.dateTime("created_at").defaultTo(knex.fn.now());
+       table.dateTime("updated_at").defaultTo(knex.fn.now());
+    });
+},
+
+
+  //Migratie ongedaan maken
+  down: async (knex) => {
+    await knex.schema.dropTableIfExists(tables.Games);
+  },
+};
