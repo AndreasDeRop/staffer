@@ -72,7 +72,7 @@ async function initializeData() {
 
   const userCount = await knexInstance('Users').count('youth_movement_id').first();
   
-  if (isDevelopment) {
+  // if (isDevelopment) {
     logger.info('Attempting to seed the database');
     try {
       await knexInstance.raw('SET FOREIGN_KEY_CHECKS = 0');
@@ -82,7 +82,7 @@ async function initializeData() {
     } catch (error) {
       logger.error('Error while seeding the database', { error });
     }
-  } 
+  // } 
 
   logger.info('Successfully connected to the database');
   return knexInstance;
