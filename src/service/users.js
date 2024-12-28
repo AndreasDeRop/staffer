@@ -13,7 +13,7 @@ const { getLogger } = require('../core/logging');
       throw ServiceError.unauthorized('Invalid email or password.');
     }
     // Check password
-    const passwordMatch = await verifyPassword(password, user.hashed_password);
+    const passwordMatch = await verifyPassword(password, user.password_hash);
     if (!passwordMatch) {
       throw ServiceError.unauthorized('Invalid email or password.');
     }
