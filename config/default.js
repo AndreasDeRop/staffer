@@ -12,8 +12,9 @@ module.exports = {
             issuer: 'delaware.hogent.be', // gaf de token uit
             audience: 'delaware.hogent.be', //
           },
-          cors: {
-            origins: ["https://staffer-n8bk.onrender.com"],
-          },
-    }
+          
+    },
+    cors: {
+        origins: ["https://staffer-n8bk.onrender.com"],
+      },
     };
