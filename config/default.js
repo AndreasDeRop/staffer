@@ -18,4 +18,8 @@ module.exports = {
         origins: ["https://staffer-n8bk.onrender.com"],
         maxAge: 3 * 60 * 60,
       },
+      log: {
+        level: "info",
+        disabled: false,
+      },
     };
