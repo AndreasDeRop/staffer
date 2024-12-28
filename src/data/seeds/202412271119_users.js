@@ -12,9 +12,9 @@ module.exports = {
       id: 1,
       youth_movement_id: 1, // Scouts ABC
       role_id: 1,           // 'Leader' for Scouts
-      name: "Alice",
-      email: "alice@scoutsabc.com",
-      password_hash: "hashedpasswordalice",
+      name: "Andre",
+      email: "andreasderop@hotmail.com",
+      password_hash: "$argon2i$v=19$m=17,t=2,p=1$Tjk5dmVNRlJsSmh6VWE3eA$8PFxAz8Sex1gClOCpFmkUrluEGQGaWISZsRNw5mUOuA",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ module.exports = {
       role_id: 2,           // 'Penning' for Scouts
       name: "Bob",
       email: "bob@scoutsabc.com",
-      password_hash: "hashedpasswordbob",
+      password_hash: "$argon2i$v=19$m=17,t=2,p=1$Tjk5dmVNRlJsSmh6VWE3eA$8PFxAz8Sex1gClOCpFmkUrluEGQGaWISZsRNw5mUOuA",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ module.exports = {
       role_id: 3,           // 'Leader' for Chiro
       name: "Charlie",
       email: "charlie@chiroxyz.com",
-      password_hash: "hashedpasswordcharlie",
+      password_hash: "$argon2i$v=19$m=17,t=2,p=1$Tjk5dmVNRlJsSmh6VWE3eA$8PFxAz8Sex1gClOCpFmkUrluEGQGaWISZsRNw5mUOuA",
     },
   ]);
 }
