@@ -9,6 +9,7 @@ const installMeetingRouter = require('./meeting');
 const installEventRouter = require('./event');
 const installTaskRouter = require('./task');
 const installGameRouter = require('./game');
+const installHealthRouter = require('./health');
 
 /**
  * Install all routes in the given Koa application.
@@ -29,6 +30,7 @@ module.exports = (app) => {
   installEventRouter(router);
   installTaskRouter(router);
   installGameRouter(router);
+  installHealthRouter(router);
 
   app
     .use(router.routes())
